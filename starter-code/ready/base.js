@@ -1,16 +1,15 @@
 /*
   What needs to change so that the page says "Go!"?
 */
+var go = false;
 
 $(document).ready(function(){
-  console.log( "The page says:", $("h1").text() );
-});
+  $("h1").text("Go!");
 
-$("h1").text("Go!");
-
-if ( $("h1").text() === "Go!" ){
+if ( go === true){
   console.log( "The page says:", $("h1").text() );
-  console.log("Success!");
+  
 } else {
-  console.log( 'Can you make it say "Go!"?' );
+  $("<div>'Go!'</div");
 }
+});
